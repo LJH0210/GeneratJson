@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36B41ED11C7E0FEE006033C5 /* JsonModelGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B41ED01C7E0FEE006033C5 /* JsonModelGenerator.m */; };
+		36B41ED51C7E100D006033C5 /* BeeModelGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B41ED41C7E100D006033C5 /* BeeModelGenerator.m */; };
 		6D27A9041C607BB200653DB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D27A9031C607BB200653DB9 /* AppDelegate.m */; };
 		6D27A9071C607BB200653DB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D27A9061C607BB200653DB9 /* main.m */; };
 		6D27A90A1C607BB200653DB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D27A9091C607BB200653DB9 /* ViewController.m */; };
@@ -28,6 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36B41ECF1C7E0FEE006033C5 /* JsonModelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModelGenerator.h; sourceTree = "<group>"; };
+		36B41ED01C7E0FEE006033C5 /* JsonModelGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModelGenerator.m; sourceTree = "<group>"; };
+		36B41ED31C7E100D006033C5 /* BeeModelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeeModelGenerator.h; sourceTree = "<group>"; };
+		36B41ED41C7E100D006033C5 /* BeeModelGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeeModelGenerator.m; sourceTree = "<group>"; };
+		36B41ED61C7E102D006033C5 /* GeneratorProtrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorProtrol.h; sourceTree = "<group>"; };
 		6D27A8FF1C607BB200653DB9 /* BitchJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitchJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D27A9021C607BB200653DB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D27A9031C607BB200653DB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36B41ED21C7E0FF3006033C5 /* generator */ = {
+			isa = PBXGroup;
+			children = (
+				36B41ECF1C7E0FEE006033C5 /* JsonModelGenerator.h */,
+				36B41ED01C7E0FEE006033C5 /* JsonModelGenerator.m */,
+				36B41ED31C7E100D006033C5 /* BeeModelGenerator.h */,
+				36B41ED41C7E100D006033C5 /* BeeModelGenerator.m */,
+				36B41ED61C7E102D006033C5 /* GeneratorProtrol.h */,
+			);
+			name = generator;
+			sourceTree = "<group>";
+		};
 		6D27A8F61C607BB200653DB9 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +112,7 @@
 		6D27A9011C607BB200653DB9 /* BitchJson */ = {
 			isa = PBXGroup;
 			children = (
+				36B41ED21C7E0FF3006033C5 /* generator */,
 				6D3EA38E1C61A189004A6195 /* JSONModel */,
 				6D27A9021C607BB200653DB9 /* AppDelegate.h */,
 				6D27A9031C607BB200653DB9 /* AppDelegate.m */,
@@ -258,6 +278,8 @@
 			files = (
 				6D3EA3B11C61A189004A6195 /* JSONHTTPClient.m in Sources */,
 				6D3EA3AC1C61A189004A6195 /* JSONModelArray.m in Sources */,
+				36B41ED51C7E100D006033C5 /* BeeModelGenerator.m in Sources */,
+				36B41ED11C7E0FEE006033C5 /* JsonModelGenerator.m in Sources */,
 				6D3EA3AE1C61A189004A6195 /* JSONModelError.m in Sources */,
 				6D3EA3B01C61A189004A6195 /* JSONAPI.m in Sources */,
 				6D3EA3B41C61A189004A6195 /* JSONValueTransformer.m in Sources */,

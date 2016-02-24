@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "JsonModelGenerator.h"
+#import "BeeModelGenerator.h"
 
 enum Bean_TYPE{
     JsonModelBean = 1,
@@ -110,25 +112,25 @@ enum File_TYPE{
                     
                     if (_beanType == JsonModelBean) {
                         if (_fileType == SingleModelBean) {
-                            [self generSingle:jsonObject];
+                            [[JsonModelGenerator new] generatSingleFile:jsonObject fileKey:_entityNameLabel.stringValue];
                         }else{
-                            [self iterationMutliJsonModelObj:jsonObject key:nil];
+                            [[JsonModelGenerator new] generatMutliFile:jsonObject key:nil fileKey:_entityNameLabel.stringValue];
                         }
                     }else{
                         if (_fileType == SingleModelBean) {
-                            [self generBeeSingle:jsonObject];
+                            [[BeeModelGenerator new] generatSingleFile:jsonObject fileKey:_entityNameLabel.stringValue];
                         }else{
-                            [self iterationMutliBeeObj:jsonObject key:nil];
+                            [[BeeModelGenerator new] generatMutliFile:jsonObject key:nil fileKey:_entityNameLabel.stringValue];
                         }
                     }
-                    
+                    _infoLabel.stringValue = @"Done";
                 }else{
                     // 解析错误
                     _infoLabel.stringValue = @"Json格式出错......";
                 }
             }else{
                 // 解析错误
-                _infoLabel.stringValue = @"Json格式出错......";
+                _infoLabel.stringValue = @"Done";
             }
         }
     }
